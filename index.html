@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintCraft Studio | Premium Printing & Design Services</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .portfolio-item {
+            transition: all 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-indigo-600">PrintCraft</span>
+                        <span class="ml-1 text-2xl font-light text-gray-700">Studio</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-600 bg-indigo-50">Home</a>
+                        <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600">Services</a>
+                        <a href="portfolio.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600">Portfolio</a>
+                        <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600">About</a>
+<a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2 rounded-md inline-flex items-center justify-center text-gray-600 hover:text-indigo-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="vanta-bg" class="min-h-screen flex items-center justify-center hero-bg">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Where <span class="text-indigo-300">Pixels</span> Meet <span class="text-indigo-300">Paper</span></h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">Professional graphic design and printing services that bring your vision to life with precision and creativity.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition duration-300">Get a Quote</a>
+                <a href="#services" class="px-8 py-3 bg-white text-indigo-600 font-medium rounded-lg hover:bg-gray-100 transition duration-300">Our Services</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Premium Services</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">From concept to final print, we handle every detail with care and expertise.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <img class="h-48 w-full object-cover" src="http://static.photos/technology/640x360/1" alt="Photography">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Photography</div>
+                        <p class="mt-2 text-gray-600">Professional photography for products, events, and portraits with expert lighting and composition.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Learn more &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <img class="h-48 w-full object-cover" src="http://static.photos/office/640x360/2" alt="Large Format Printing">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Large Format Printing</div>
+                        <p class="mt-2 text-gray-600">High-quality banners, posters, and signage for any business need or special event.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Learn more &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <img class="h-48 w-full object-cover" src="http://static.photos/workspace/640x360/3" alt="Branding">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Branding Services</div>
+                        <p class="mt-2 text-gray-600">Complete branding solutions including logos, business cards, and corporate identity packages.</p>
+                        <div class="mt-4">
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Learn more &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More service cards would go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Recent Work</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">See examples of our craftsmanship across various projects and industries.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item overflow-hidden rounded-lg shadow-md bg-white">
+                    <img class="w-full h-64 object-cover" src="http://static.photos/retail/640x360/4" alt="Retail Branding">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Retail Branding Package</h3>
+                        <p class="mt-2 text-gray-600">Complete branding for a boutique clothing store including logo, tags, and shopping bags.</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item overflow-hidden rounded-lg shadow-md bg-white">
+                    <img class="w-full h-64 object-cover" src="http://static.photos/food/640x360/5" alt="Restaurant Menu">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Luxury Restaurant Menu</h3>
+                        <p class="mt-2 text-gray-600">Premium menu design with leather binding and gold foil accents for a high-end restaurant.</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item overflow-hidden rounded-lg shadow-md bg-white">
+                    <img class="w-full h-64 object-cover" src="http://static.photos/event/640x360/6" alt="Event Banner">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Corporate Event Banner</h3>
+                        <p class="mt-2 text-gray-600">Large format banner for a tech company's annual conference, printed on durable vinyl.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-indigo-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold sm:text-4xl">What Our Clients Say</h2>
+                <p class="mt-4 max-w-2xl text-xl text-indigo-100 mx-auto">Don't just take our word for it - hear from our satisfied customers.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-indigo-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="h-12 w-12 rounded-full bg-indigo-600 flex items-center justify-center">
+                                <i data-feather="user" class="text-white"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold">Sarah Johnson</h4>
+                            <p class="text-indigo-300">Marketing Director</p>
+                        </div>
+                    </div>
+                    <p class="text-indigo-100">"The quality of our company brochures exceeded all expectations. PrintCraft Studio delivered exceptional design and printing that perfectly represents our brand."</p>
+                    <div class="mt-4 flex">
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-indigo-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="h-12 w-12 rounded-full bg-indigo-600 flex items-center justify-center">
+                                <i data-feather="user" class="text-white"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold">Michael Chen</h4>
+                            <p class="text-indigo-300">Small Business Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-indigo-100">"The team was incredibly responsive and understood exactly what we needed for our restaurant menus. The final product was stunning and durable."</p>
+                    <div class="mt-4 flex">
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-indigo-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="h-12 w-12 rounded-full bg-indigo-600 flex items-center justify-center">
+                                <i data-feather="user" class="text-white"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold">Emily Rodriguez</h4>
+                            <p class="text-indigo-300">Event Planner</p>
+                        </div>
+                    </div>
+                    <p class="text-indigo-100">"For our annual conference, the banners and signage printed by PrintCraft were vibrant and professional. They handled our tight deadline with no issues."</p>
+                    <div class="mt-4 flex">
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                        <i data-feather="star" class="text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6">Get in Touch</h2>
+                    <p class="text-lg text-gray-600 mb-8">Ready to bring your project to life? Contact us for a consultation or quote.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center">
+                                    <i data-feather="map-pin" class="text-indigo-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Our Location</h3>
+                                <p class="text-gray-600">123 Design Street, Creative District, Lagos, Nigeria</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center">
+                                    <i data-feather="mail" class="text-indigo-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Email Us</h3>
+                                <p class="text-gray-600">hello@printcraftstudio.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center">
+                                    <i data-feather="phone" class="text-indigo-600"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Call Us</h3>
+                                <p class="text-gray-600">+234 812 345 6789</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-indigo-600 hover:bg-gray-200">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-indigo-600 hover:bg-gray-200">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-indigo-600 hover:bg-gray-200">
+                                <i data-feather="twitter"></i>
+                            </a>
+                            <a href="#" class="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:text-indigo-600 hover:bg-gray-200">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Request a Quote</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700">Service Needed</label>
+                            <select id="service" name="service" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border">
+                                <option value="">Select a service</option>
+                                <option value="photography">Photography</option>
+                                <option value="large-format">Large Format Printing</option>
+                                <option value="branding">Branding Services</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="lamination">Lamination</option>
+                                <option value="shirt-printing">Shirt & Souvenir Printing</option>
+                                <option value="other">Other Printing Services</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Project Details</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border"></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Submit Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">PrintCraft Studio</h3>
+                    <p class="mb-4">Professional graphic design and printing services that bring your vision to life.</p>
+                    <p>&copy; 2023 PrintCraft Studio. All rights reserved.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="index.html#services" class="hover:text-white">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white">Portfolio</a></li>
+                        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+<li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Photography</a></li>
+                        <li><a href="#" class="hover:text-white">Large Format Printing</a></li>
+                        <li><a href="#" class="hover:text-white">Branding</a></li>
+                        <li><a href="#" class="hover:text-white">Graphic Design</a></li>
+                        <li><a href="#" class="hover:text-white">Shirt Printing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact Info</h3>
+                    <address class="not-italic">
+                        <p class="mb-2">123 Design Street</p>
+                        <p class="mb-2">Creative District, Lagos</p>
+                        <p class="mb-2">Nigeria</p>
+                        <p class="mb-2">hello@printcraftstudio.com</p>
+                        <p>+234 812 345 6789</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">Designed with ❤️ by PrintCraft Studio</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js background
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x6366f1,
+            backgroundColor: 0x111827,
+            points: 12.00,
+            maxDistance: 24.00,
+            spacing: 18.00
+        });
+        
+        // Initialize feather icons
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            // You would implement mobile menu functionality here
+            alert("Mobile menu would open here in a complete implementation");
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
