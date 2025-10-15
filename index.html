@@ -75,37 +75,37 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service Card 1 -->
-                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300" data-service="photography">
                     <img class="h-48 w-full object-cover" src="http://static.photos/technology/640x360/1" alt="Photography">
                     <div class="p-8">
                         <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Photography</div>
                         <p class="mt-2 text-gray-600">Professional photography for products, events, and portraits with expert lighting and composition.</p>
                         <div class="mt-4">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Learn more &rarr;</a>
+                            <a href="#" class="service-learn text-indigo-600 hover:text-indigo-800 font-medium" data-service="photography">Learn more &rarr;</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Service Card 2 -->
-                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300" data-service="large-format">
                     <img class="h-48 w-full object-cover" src="http://static.photos/office/640x360/2" alt="Large Format Printing">
                     <div class="p-8">
                         <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Large Format Printing</div>
                         <p class="mt-2 text-gray-600">High-quality banners, posters, and signage for any business need or special event.</p>
                         <div class="mt-4">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Learn more &rarr;</a>
+                            <a href="#" class="service-learn text-indigo-600 hover:text-indigo-800 font-medium" data-service="large-format">Learn more &rarr;</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Service Card 3 -->
-                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300" data-service="branding">
                     <img class="h-48 w-full object-cover" src="http://static.photos/workspace/640x360/3" alt="Branding">
                     <div class="p-8">
                         <div class="uppercase tracking-wide text-sm text-indigo-600 font-semibold">Branding Services</div>
                         <p class="mt-2 text-gray-600">Complete branding solutions including logos, business cards, and corporate identity packages.</p>
                         <div class="mt-4">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium">Learn more &rarr;</a>
+                            <a href="#" class="service-learn text-indigo-600 hover:text-indigo-800 font-medium" data-service="branding">Learn more &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -114,6 +114,18 @@
             </div>
         </div>
     </section>
+
+    <!-- Service Samples Modal -->
+    <div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg overflow-hidden max-w-3xl w-full mx-4">
+            <div class="p-4 flex justify-between items-center border-b">
+                <h3 id="serviceModalTitle" class="text-xl font-semibold"></h3>
+                <button id="closeServiceModal" class="text-gray-600">&times;</button>
+            </div>
+            <div class="p-4" id="serviceModalBody"></div>
+        </div>
+    </div>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-20 bg-gray-50">
@@ -450,5 +462,6 @@
             });
         });
     </script>
+    <script src="bramax-service-samples.js"></script>
 </body>
 </html>
